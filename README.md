@@ -38,8 +38,9 @@ Released under the [MIT License](LICENSE).
 
 ## Contact
 
-Pratyush Tripathy — <ptripathy@ucsb.edu>
-Department of Geography, University of California, Santa Barbara
+Pratyush Tripathy — <ptripathy@ucsb.edu>  
+Department of Geography  
+University of California, Santa Barbara
 
 ## Funding
 
