@@ -2,6 +2,20 @@
 
 This document outlines a multi-stage workflow for detecting and refining agricultural field boundaries from geospatial data. The process involves a series of five interconnected Jupyter notebooks, each performing a step of aggregation, filtering, and accuracy assessment. The ultimate goal is to produce a highly accurate and clean set of field boundary polygons.
 
+| Stage | Notebook | What it does |
+|---|---|---|
+| Workflow 1 | `Workflow1_v4.ipynb` | Merge adjacent SAM polygons within a tile set; area, NDVI, and compactness filtering. |
+| Workflow 2 | `Workflow2_v3.ipynb` | Merge predictions across SAM checkpoints (ViT-B, ViT-L, ViT-H). |
+| Workflow 3 | `Workflow3_v2.ipynb` | Merge predictions across input tile sizes within an acquisition date. |
+| Workflow 4 | `Workflow4_v1.ipynb` | Merge predictions across the four acquisition dates (T1–T4). |
+| Workflow 5 | `Workflow5_v1.ipynb` | Merge original and edge-enhanced image predictions. |
+| Plots | `PlotsForPaper_Share_v3.ipynb`, `ReviewersPlots_v1.ipynb` | Manuscript and reviewer-response figures. |
+| Utilities | `utils.py` | Geometry merging, overlap resolution, accuracy metrics. |
+
+## Dependencies
+
+The notebooks rely on `geopandas`, `shapely`, `geoplanar`, `numpy`, `pandas`, `rasterio`, and `matplotlib`. SAM inference itself uses [`samgeo`](https://samgeo.gishub.org/). A complete environment file may be added in a future revision; for now, install the listed packages into a fresh Python environment.
+
 ## Overall Workflow Summary
 
 The workflow is a hierarchical aggregation and refinement process. It starts with raw polygon predictions from a Segment Anything Model (SAM) and progressively merges them to create a more robust and accurate final product. Each step of the workflow involves merging predictions, resolving overlaps, and performing an accuracy assessment against a ground truth dataset.

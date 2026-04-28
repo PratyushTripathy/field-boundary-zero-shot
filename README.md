@@ -10,19 +10,7 @@ The paper benchmarks the Segment Anything Model (SAM) for delineating smallholde
 
 ## What this repo contains
 
-The pipeline is organised as five sequential Jupyter notebooks under `scripts/`, each merging predictions at a different level of aggregation, plus shared geometry utilities and the plotting code used for the manuscript figures.
-
-| Stage | Notebook | What it does |
-|---|---|---|
-| Workflow 1 | `Workflow1_v4.ipynb` | Merge adjacent SAM polygons within a tile set; area, NDVI, and compactness filtering. |
-| Workflow 2 | `Workflow2_v3.ipynb` | Merge predictions across SAM checkpoints (ViT-B, ViT-L, ViT-H). |
-| Workflow 3 | `Workflow3_v2.ipynb` | Merge predictions across input tile sizes within an acquisition date. |
-| Workflow 4 | `Workflow4_v1.ipynb` | Merge predictions across the four acquisition dates (T1–T4). |
-| Workflow 5 | `Workflow5_v1.ipynb` | Merge original and edge-enhanced image predictions. |
-| Plots | `PlotsForPaper_Share_v3.ipynb`, `ReviewersPlots_v1.ipynb` | Manuscript and reviewer-response figures. |
-| Utilities | `utils.py` | Geometry merging, overlap resolution, accuracy metrics. |
-
-A more detailed step-by-step description of each workflow lives in [`scripts/README.md`](scripts/README.md).
+The pipeline is organised as five sequential Jupyter notebooks under `scripts/` that take raw SAM masks through hierarchical merging across checkpoints, tile sizes, acquisition dates, and image variants, plus shared geometry utilities and the plotting code used for the manuscript figures. See [`scripts/README.md`](scripts/README.md) for the workflow table, dependencies, and a step-by-step description of each notebook.
 
 ## Data
 
@@ -31,10 +19,6 @@ All inputs live under [`data/`](data/):
 * **Imagery.** Four pre-processed SkySat scenes are in [`data/raster/`](data/raster/); see [`data/raster/README.md`](data/raster/README.md) for acquisition dates, pre-processing details, and the original Planet/GEE source.
 * **Fishnet tiles.** GeoPackage tile grids used to chip the imagery for SAM inference are in [`data/vector/`](data/vector/) (`Fishnet_3by3.gpkg`, `Fishnet_4by4.gpkg`, `Fishnet_6by6.gpkg`, `Fishnet_12by12.gpkg`).
 * **Reference field boundaries.** 8176 polygons (≈6 km²) in Bihar, India, manually digitized for this study. Mean parcel size 0.07 ha (median 0.05 ha); 82.68% of parcels are smaller than 0.1 ha.
-
-## Dependencies
-
-The notebooks rely on `geopandas`, `shapely`, `geoplanar`, `numpy`, `pandas`, `rasterio`, and `matplotlib`. SAM inference itself uses [`samgeo`](https://samgeo.gishub.org/). A complete environment file may be added in a future revision; for now, install the listed packages into a fresh Python environment.
 
 ## Citation
 
@@ -63,6 +47,7 @@ Released under the [MIT License](LICENSE).
 ## Contact
 
 Pratyush Tripathy — <ptripathy@ucsb.edu>
+Department of Geography, University of California, Santa Barbara
 
 ## Funding
 
