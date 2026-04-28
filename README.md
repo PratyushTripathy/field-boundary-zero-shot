@@ -19,7 +19,7 @@ The pipeline is organised as five sequential Jupyter notebooks under `scripts/`,
 | Workflow 3 | `Workflow3_v2.ipynb` | Merge predictions across input tile sizes within an acquisition date. |
 | Workflow 4 | `Workflow4_v1.ipynb` | Merge predictions across the four acquisition dates (T1–T4). |
 | Workflow 5 | `Workflow5_v1.ipynb` | Merge original and edge-enhanced image predictions. |
-| Plots | `260209_PlotsForPaper_Share_v3.ipynb`, `260212_ReviewersPlots_v1.ipynb` | Manuscript and reviewer-response figures. |
+| Plots | `PlotsForPaper_Share_v3.ipynb`, `ReviewersPlots_v1.ipynb` | Manuscript and reviewer-response figures. |
 | Utilities | `utils.py` | Geometry merging, overlap resolution, accuracy metrics. |
 
 A more detailed step-by-step description of each workflow lives in [`scripts/README.md`](scripts/README.md).
