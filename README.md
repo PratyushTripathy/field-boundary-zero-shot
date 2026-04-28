@@ -1,6 +1,6 @@
 # field-boundary-zero-shot
 
-Code and modified SkySat satellite imagery accompanying the journal article **"Zero-shot inference strategies for smallholder (<0.1 ha) agriculture field delineation with the Segment Anything foundation model"** (Tripathy et al., 2026, *Science of Remote Sensing*).
+Code and modified SkySat satellite imagery accompanying the journal article *"Zero-shot inference strategies for smallholder (<0.1 ha) agriculture field delineation with the Segment Anything foundation model"* (Tripathy et al., 2026, *Science of Remote Sensing*).
 
 The paper explores zero-shot inference strategies for the Segment Anything Model (SAM) for mapping smallholder agricultural field boundaries. Using 2 m SkySat imagery pansharpened to 0.8 m over Bihar, India, SAM identifies 57% of 8176 manually digitized reference fields with a mean IoU of 0.73, without any fine-tuning. While the case study focuses on smallholder agriculture, the strategies isolated here, including model checkpoint, input tile size, multi-temporal fusion, and edge enhancement, generalize more broadly to other foundation models and remote sensing applications. The repository contains the post-processing and evaluation pipeline that converts raw SAM masks into vector field boundaries.
 
