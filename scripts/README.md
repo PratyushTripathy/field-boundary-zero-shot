@@ -14,7 +14,7 @@ This document outlines a multi-stage workflow for detecting and refining agricul
 
 ## Dependencies
 
-The notebooks rely on `geopandas`, `shapely`, `geoplanar`, `numpy`, `pandas`, `rasterio`, and `matplotlib`. SAM inference itself uses [`samgeo`](https://samgeo.gishub.org/). A complete environment file may be added in a future revision; for now, install the listed packages into a fresh Python environment.
+The notebooks rely on `geopandas`, `shapely`, `geoplanar`, `numpy`, `pandas`, `rasterio`, and `matplotlib`. SAM inference itself uses `samgeo`. A complete environment file may be added in a future revision; for now, install the listed packages into a fresh Python environment.
 
 ## Overall Workflow Summary
 
