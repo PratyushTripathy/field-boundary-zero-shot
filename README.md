@@ -14,11 +14,11 @@ The pipeline is organised as five sequential Jupyter notebooks under `scripts/`,
 
 | Stage | Notebook | What it does |
 |---|---|---|
-| Workflow 1 | `240814_Workflow1_v4.ipynb` | Merge adjacent SAM polygons within a tile set; area, NDVI, and compactness filtering. |
-| Workflow 2 | `240814_Workflow2_v3.ipynb` | Merge predictions across SAM checkpoints (ViT-B, ViT-L, ViT-H). |
-| Workflow 3 | `240815_Workflow3_v2.ipynb` | Merge predictions across input tile sizes within an acquisition date. |
-| Workflow 4 | `240413_Workflow4_v1.ipynb` | Merge predictions across the four acquisition dates (T1–T4). |
-| Workflow 5 | `240413_Workflow5_v1.ipynb` | Merge original and edge-enhanced image predictions. |
+| Workflow 1 | `Workflow1_v4.ipynb` | Merge adjacent SAM polygons within a tile set; area, NDVI, and compactness filtering. |
+| Workflow 2 | `Workflow2_v3.ipynb` | Merge predictions across SAM checkpoints (ViT-B, ViT-L, ViT-H). |
+| Workflow 3 | `Workflow3_v2.ipynb` | Merge predictions across input tile sizes within an acquisition date. |
+| Workflow 4 | `Workflow4_v1.ipynb` | Merge predictions across the four acquisition dates (T1–T4). |
+| Workflow 5 | `Workflow5_v1.ipynb` | Merge original and edge-enhanced image predictions. |
 | Plots | `260209_PlotsForPaper_Share_v3.ipynb`, `260212_ReviewersPlots_v1.ipynb` | Manuscript and reviewer-response figures. |
 | Utilities | `utils.py` | Geometry merging, overlap resolution, accuracy metrics. |
 
@@ -60,3 +60,7 @@ Released under the [MIT License](LICENSE).
 ## Contact
 
 Pratyush Tripathy — <ptripathy@ucsb.edu>
+
+## Funding
+
+This work was supported by the Benioff Scholars Program in Applied Environmental Science scholarship and the Schmidt Family Foundation Research Accelerator award.
