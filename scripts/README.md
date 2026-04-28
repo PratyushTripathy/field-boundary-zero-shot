@@ -9,7 +9,7 @@ This document outlines a multi-stage workflow for detecting and refining agricul
 | Workflow 3 | `Workflow3_v2.ipynb` | Merge predictions across input tile sizes within an acquisition date. |
 | Workflow 4 | `Workflow4_v1.ipynb` | Merge predictions across the four acquisition dates (T1–T4). |
 | Workflow 5 | `Workflow5_v1.ipynb` | Merge original and edge-enhanced image predictions. |
-| Plots | `PlotsForPaper_Share_v3.ipynb`, `ReviewersPlots_v1.ipynb` | Manuscript and reviewer-response figures. |
+| Plots | `PlotsForPaper_Share_v3.ipynb` | Manuscript figures. |
 | Utilities | `utils.py` | Geometry merging, overlap resolution, accuracy metrics. |
 
 ## Dependencies
