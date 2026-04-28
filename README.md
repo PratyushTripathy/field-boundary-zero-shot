@@ -10,15 +10,7 @@ The paper explores zero-shot inference strategies for the Segment Anything Model
 
 ## What this repo contains
 
-The pipeline is organised as five sequential Jupyter notebooks under `scripts/` that take raw SAM masks through hierarchical merging across checkpoints, tile sizes, acquisition dates, and image variants, plus shared geometry utilities and the plotting code used for the manuscript figures. See [`scripts/README.md`](scripts/README.md) for the workflow table, dependencies, and a step-by-step description of each notebook.
-
-## Data
-
-All inputs live under [`data/`](data/):
-
-* **Imagery.** Four pre-processed SkySat scenes are in [`data/raster/`](data/raster/); see [`data/raster/README.md`](data/raster/README.md) for acquisition dates, pre-processing details, and the original Planet/GEE source.
-* **Fishnet tiles.** GeoPackage tile grids used to chip the imagery for SAM inference are in [`data/vector/`](data/vector/) (`Fishnet_3by3.gpkg`, `Fishnet_4by4.gpkg`, `Fishnet_6by6.gpkg`, `Fishnet_12by12.gpkg`).
-* **Reference field boundaries.** 8176 polygons (≈6 km²) in Bihar, India, manually digitized for this study. Mean parcel size 0.07 ha (median 0.05 ha); 82.68% of parcels are smaller than 0.1 ha.
+This repository contains the modified SkySat satellite imagery and the 8176 manually digitized field boundary polygons used in the study, both under [`data/`](data/), along with the post-processing and evaluation pipeline under [`scripts/`](scripts/). The pipeline is organised as five sequential Jupyter notebooks that take raw SAM masks through hierarchical merging across checkpoints, tile sizes, acquisition dates, and image variants, plus shared geometry utilities and the plotting code used for the manuscript figures. See [`scripts/README.md`](scripts/README.md) for the workflow table, dependencies, and a step-by-step description of each notebook, and [`data/README.md`](data/README.md) for details on the data files.
 
 ## Citation
 
