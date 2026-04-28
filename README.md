@@ -26,7 +26,10 @@ A more detailed step-by-step description of each workflow lives in [`scripts/REA
 
 ## Data
 
-* **Imagery.** SkySat Public Orthorectified multispectral imagery — see the [`raster/`](raster/) folder for the pre-processed scenes used in this study and the original data source.
+All inputs live under [`data/`](data/):
+
+* **Imagery.** Four pre-processed SkySat scenes are in [`data/raster/`](data/raster/); see [`data/raster/README.md`](data/raster/README.md) for acquisition dates, pre-processing details, and the original Planet/GEE source.
+* **Fishnet tiles.** GeoPackage tile grids used to chip the imagery for SAM inference are in [`data/vector/`](data/vector/) (`Fishnet_3by3.gpkg`, `Fishnet_4by4.gpkg`, `Fishnet_6by6.gpkg`, `Fishnet_12by12.gpkg`).
 * **Reference field boundaries.** 8176 polygons (≈6 km²) in Bihar, India, manually digitized for this study. Mean parcel size 0.07 ha (median 0.05 ha); 82.68% of parcels are smaller than 0.1 ha.
 
 ## Dependencies

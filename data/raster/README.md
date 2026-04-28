@@ -17,7 +17,7 @@ The raw SkySat Public Orthorectified Multispectral imagery is provided by Planet
 
 <https://developers.google.com/earth-engine/datasets/catalog/SKYSAT_GEN-A_PUBLIC_ORTHO_MULTISPECTRAL>
 
-Refer to the article (see the repository [README](../README.md)) for full pre-processing details.
+Refer to the article (see the repository [README](../../README.md)) for full pre-processing details.
 
 ## License and attribution
 
@@ -26,7 +26,7 @@ The original SkySat Public Orthorectified Multispectral imagery is © Planet Lab
 If you use any file in this folder, you must:
 
 1. Cite the original imagery as **"© Planet Labs Inc."** alongside the GEE dataset link above.
-2. Cite the article that produced these specific pre-processed scenes (see the repository [README](../README.md) for the full citation and BibTeX).
+2. Cite the article that produced these specific pre-processed scenes (see the repository [README](../../README.md) for the full citation and BibTeX).
 3. Make clear that the data have been modified — pansharpened, percentile-stretched and byte-scaled, clipped, and manually co-registered — relative to the original Planet product, and that any further redistribution must preserve this notice.
 
 These derivatives are otherwise made available under CC BY 4.0, consistent with the upstream Planet licence, but in case of any conflict, **Planet Labs' terms govern**.
