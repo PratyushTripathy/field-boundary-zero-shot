@@ -26,7 +26,7 @@ A more detailed step-by-step description of each workflow lives in [`scripts/REA
 
 ## Data
 
-* **Imagery.** SkySat Public Orthorectified multispectral imagery, available via Google Earth Engine: <https://developers.google.com/earth-engine/datasets/catalog/SKYSAT_GEN-A_PUBLIC_ORTHO_MULTISPECTRAL>.
+* **Imagery.** SkySat Public Orthorectified multispectral imagery — see the [`raster/`](raster/) folder for the pre-processed scenes used in this study and the original data source.
 * **Reference field boundaries.** 8176 polygons (≈6 km²) in Bihar, India, manually digitized for this study. Mean parcel size 0.07 ha (median 0.05 ha); 82.68% of parcels are smaller than 0.1 ha.
 
 ## Dependencies
