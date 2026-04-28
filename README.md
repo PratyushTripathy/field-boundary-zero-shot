@@ -1,6 +1,6 @@
 # field-boundary-zero-shot
 
-Code, modified SkySat satellite imagery, and over 8000 hand-labeled smallholder field boundary polygons accompanying the journal article **"Zero-shot inference strategies for smallholder (<0.1 ha) agriculture field delineation with the Segment Anything foundation model"** (Tripathy et al., 2026, *Science of Remote Sensing*).
+Code and modified SkySat satellite imagery accompanying the journal article **"Zero-shot inference strategies for smallholder (<0.1 ha) agriculture field delineation with the Segment Anything foundation model"** (Tripathy et al., 2026, *Science of Remote Sensing*).
 
 The paper explores zero-shot inference strategies for the Segment Anything Model (SAM) for mapping smallholder agricultural field boundaries. Using 2 m SkySat imagery pansharpened to 0.8 m over Bihar, India, SAM identifies 57% of 8176 manually digitized reference fields with a mean IoU of 0.73, without any fine-tuning. While the case study focuses on smallholder agriculture, the strategies isolated here, including model checkpoint, input tile size, multi-temporal fusion, and edge enhancement, generalize more broadly to other foundation models and remote sensing applications. The repository contains the post-processing and evaluation pipeline that converts raw SAM masks into vector field boundaries.
 
@@ -10,7 +10,7 @@ The paper explores zero-shot inference strategies for the Segment Anything Model
 
 ## What this repo contains
 
-This repository contains the modified SkySat satellite imagery and the 8176 manually digitized field boundary polygons used in the study, both under [`data/`](data/), along with the post-processing and evaluation pipeline under [`scripts/`](scripts/). The pipeline is organised as five sequential Jupyter notebooks that take raw SAM masks through hierarchical merging across checkpoints, tile sizes, acquisition dates, and image variants, plus shared geometry utilities and the plotting code used for the manuscript figures. See [`scripts/README.md`](scripts/README.md) for the workflow table, dependencies, and a step-by-step description of each notebook, and [`data/README.md`](data/README.md) for details on the data files.
+This repository contains the modified SkySat satellite imagery used in the study under [`data/`](data/), along with the post-processing and evaluation pipeline under [`scripts/`](scripts/). The pipeline is organised as five sequential Jupyter notebooks that take raw SAM masks through hierarchical merging across checkpoints, tile sizes, acquisition dates, and image variants, plus shared geometry utilities and the plotting code used for the manuscript figures. See [`scripts/README.md`](scripts/README.md) for the workflow table, dependencies, and a step-by-step description of each notebook, and [`data/README.md`](data/README.md) for details on the data files.
 
 ## Citation
 
